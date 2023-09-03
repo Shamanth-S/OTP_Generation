@@ -2,19 +2,19 @@ import java.util.Random;
 
 public class OTP_Generation {
     public static void main(String[] args) {
-        String otp = generate();
+        String OTP = generate();
 
-        System.out.println("Generated OTP: " + otp);
+        System.out.println("Generated OTP: " + OTP);
     }
 
     static String generate() {
         Random random = new Random();
-        StringBuilder otp = new StringBuilder();
+        StringBuilder OTP = new StringBuilder();
 
         for (int i = 0; i < 6; i++) {
-            otp.append(random.nextInt(10));
+            OTP.append(random.nextInt(10));
         }
 
-        return otp.toString();
+        return OTP.toString();
     }
 }
